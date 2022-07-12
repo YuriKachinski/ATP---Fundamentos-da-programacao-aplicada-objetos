@@ -1,0 +1,35 @@
+public class Smartphone extends Equipamento {
+    private static final long serialVersionUID = 1L;
+    private int quantidadeChipsOperadora;
+    private int tamanhoDaTela;
+
+    public Smartphone(String nome, String marca, String modelo, int quantidadeChipsOperadora, int tamanhoDaTela) {
+        super(nome, marca, modelo);
+        this.quantidadeChipsOperadora = quantidadeChipsOperadora;
+        this.tamanhoDaTela = tamanhoDaTela;
+    }
+
+    public int getQuantidadeChipsOperadora() {
+        return quantidadeChipsOperadora;
+    }
+
+    public void setQuantidadeChipsOperadora(int quantidadeChipsOperadora) {
+        this.quantidadeChipsOperadora = quantidadeChipsOperadora;
+    }
+
+    public int getTamanhoDaTela() {
+        return tamanhoDaTela;
+    }
+
+    public void setTamanhoDaTela(int tamanhoDaTela) {
+        this.tamanhoDaTela = tamanhoDaTela;
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "quantidadeChipsOperadora=" + quantidadeChipsOperadora +
+                ", tamanhoDaTela=" + tamanhoDaTela +
+                '}';
+    }
+}
