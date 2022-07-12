@@ -1,0 +1,35 @@
+public class Notebook extends Equipamento {
+    private static final long serialVersionUID = 1L;
+    private String processador;
+    private int memoriaRam;
+
+    public Notebook(String nome, String marca, String modelo, String processador, int memoriaRam) {
+        super(nome, marca, modelo);
+        this.processador = processador;
+        this.memoriaRam = memoriaRam;
+    }
+
+    public String getProcessador() {
+        return processador;
+    }
+
+    public void setProcessador(String processador) {
+        this.processador = processador;
+    }
+
+    public int getMemoriaRam() {
+        return memoriaRam;
+    }
+
+    public void setMemoriaRam(int memoriaRam) {
+        this.memoriaRam = memoriaRam;
+    }
+
+    @Override
+    public String toString() {
+        return "Notebook{" +
+                "processador='" + processador + '\'' +
+                ", memoriaRam=" + memoriaRam +
+                '}';
+    }
+}
